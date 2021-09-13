@@ -5,7 +5,7 @@
 <main>
     <nav class="nav">
 		<span class="nav-log">Ecommerce</span>
-		<Search class="search"/>
+		<Search/>
       <ul>
         <li><a href="#">Account</a></li>
         <li><a href="#">Cart</a></li>
