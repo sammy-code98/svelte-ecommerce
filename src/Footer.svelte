@@ -15,6 +15,8 @@
     <div>
         <p class="text">DOWNLOAD ECOMMERCE FREE APP</p>
         <span class="text2">Get access to exclusive offers</span>
+        <br />
+        <br />
         <button>App store</button>
         <button>Google play</button>
     </div>
@@ -35,6 +37,7 @@
     font-weight: 500;
     color: #f68b1e;
     margin-left: 30px;
+    margin-top: 30px;
   }
   .text {
     color: #fff;
@@ -42,5 +45,21 @@
   .text2 {
     color: #fff;
     font-size: 15px;
+  }
+  form{
+      margin-top: 12px;
+  }
+  input[type="email"]{
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+  }
+  input[type ="submit"]{
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 4px;
+      color: #f68b1e;
+      cursor: pointer;
   }
 </style>
