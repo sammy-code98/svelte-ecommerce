@@ -2,7 +2,7 @@
 
 <main>
   <div class="container">
-    <div class="text">Top selling items</div>
+    <div class="text">Walk Shop Categories</div>
     <div class="items">
       <div class="sell-card">
         <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/953127/1.jpg?2370" alt="jum" class="sell-image">
@@ -48,9 +48,10 @@
  
   }
   .text {
-    margin-left: 12px;
+      background-color: #FEE2CC;
+      text-align: center;
     padding: 12px;
-    font: 25px;
+    font: 35px;
     font-weight: 500;
   }
   .items {
