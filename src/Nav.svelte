@@ -3,8 +3,8 @@
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const navLink = document.querySelector(".nav-link");
-//   hamburger.addEventListener("click", mobileMenu);
-//   navLink.forEach((n) => n.addEventListener("click", closeMenu));
+  //   hamburger.addEventListener("click", mobileMenu);
+  //   navLink.forEach((n) => n.addEventListener("click", closeMenu));
 
   function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -19,7 +19,7 @@
 <main>
   <nav class="navbar">
     <span class="nav-logo">Ecommerce</span>
-    <!-- <Search /> -->
+    <Search />
     <ul class="nav-menu">
       <li class="nav-item">
         <a href="#" class="nav-link">Account</a>
@@ -86,6 +86,7 @@
 
   /* media queries */
   @media only screen and (max-width: 668px) {
+    
     .hamburger {
       display: block;
       cursor: pointer;

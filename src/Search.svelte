@@ -24,4 +24,9 @@
         padding: 10px;
         margin-right: 12px;
     }
+    @media only screen and (max-width: 668px) {
+      form{
+        display: none;
+      }
+    }
 </style>
