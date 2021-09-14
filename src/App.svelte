@@ -4,6 +4,7 @@
   import Topsells from "./Topsells.svelte";
   import  Ads from "./Ads.svelte"
   import Othersell from "./Othersell.svelte";
+  import Footer from "./Footer.svelte"
 
 </script>
 
@@ -17,6 +18,10 @@
   <br />
   <br />
   <Othersell />
+  <br />
+  <br />
+  
+  <Footer />
   
 
 </main>

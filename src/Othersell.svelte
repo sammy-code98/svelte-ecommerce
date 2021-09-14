@@ -74,8 +74,9 @@
             alt="jum"
             class="sell-image"
           />
+          <p class="title">Women's Heels</p>
+
         </div>
-        <p class="title">Women's Heels</p>
 
         <div class="sell-card">
           <img
