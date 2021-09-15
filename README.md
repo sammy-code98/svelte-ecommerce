@@ -1,8 +1,8 @@
-::: warning
-This is a warning
-:::
+*Please view in desktop mode......*
 
 ---
+# project description
+This is a mini jumi
 
 # svelte app
 
