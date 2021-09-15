@@ -62,4 +62,11 @@
       color: #f68b1e;
       cursor: pointer;
   }
+  button{
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      color: #f68b1e;
+      cursor: pointer;
+  }
 </style>
