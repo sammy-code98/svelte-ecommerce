@@ -2,7 +2,9 @@
 
 ---
 # project description
-This is a mini jumi
+This is a mini jumia (an ecommerce site)  landing page clone.
+
+just trying out svelte for the first time :) :) 
 
 # svelte app
 
