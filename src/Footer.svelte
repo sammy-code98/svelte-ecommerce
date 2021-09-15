@@ -13,7 +13,7 @@
       </form>
     </div>
     <div>
-        <p class="text">DOWNLOAD ECOMMERCE FREE APP</p>
+        <p class="text tex">DOWNLOAD ECOMMERCE FREE APP</p>
         <span class="text2">Get access to exclusive offers</span>
         <br />
         <br />
@@ -25,8 +25,7 @@
 
 <style>
   .footer {
-      width: 100%;
-      
+      width: 100%; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,6 +42,9 @@
   }
   .text {
     color: #fff;
+  }
+  .tex{
+      margin-right: 12px;
   }
   .text2 {
     color: #fff;
@@ -70,5 +72,6 @@
       border-radius: 4px;
       color: #f68b1e;
       cursor: pointer;
+      margin: 15px;
   }
 </style>
