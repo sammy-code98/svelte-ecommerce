@@ -47,7 +47,10 @@
     background-color: #fff;
     padding: 1rem;
     height: 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px;
+    position: fixed;
+    width: 95vw;
+    top: 0;
   }
   .nav-logo {
     font-size: 30px;
