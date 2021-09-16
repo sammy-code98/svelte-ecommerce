@@ -54,7 +54,7 @@
     flex-direction: row;
     justify-content: space-between;
     row-gap: 10px;
-    margin-top: 12px;
+    margin-top: 52px;
     width: 100%;
   }
   .side-menu {
