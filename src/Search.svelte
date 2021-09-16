@@ -24,6 +24,9 @@
         padding: 10px;
         margin-right: 12px;
     }
+    input[type=text]:focus{
+      outline: none;
+    }
     @media only screen and (max-width: 668px) {
       form{
         display: none;
