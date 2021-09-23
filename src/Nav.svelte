@@ -1,12 +1,27 @@
 <script>
   import Search from "./Search.svelte";
- 
+  let hamburger = document.querySelector(".hamburger");
+  let navMenu = document.querySelector(".nav-menu");
+  let navLink = document.querySelectorAll(".nav-link");
+
+  hamburger.addEventListener("click", mobileMenu);
+  function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  }
+
+  navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+  function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
 </script>
 
 <main>
   <nav class="navbar">
     <span class="nav-logo">Ecommerce</span>
-    <Search />
+    <!-- <Search /> -->
     <ul class="nav-menu">
       <li class="nav-item">
         <a href="#" class="nav-link">Account</a>
@@ -18,7 +33,11 @@
         <a href="#" class="nav-link">Cart</a>
       </li>
     </ul>
-  
+    <div class="hamburger">
+      <span class="bar" />
+      <span class="bar" />
+      <span class="bar" />
+    </div>
   </nav>
 </main>
 
@@ -57,5 +76,55 @@
   .nav-link:hover {
     color: #f68b1e;
   }
- 
+  .hamburger {
+    display: none;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #f68b1e;
+  }
+  /* media queries */
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      width: 100vw;
+    }
+    .nav-logo {
+      font-size: 40px;
+    }
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-item {
+      margin: 2.5rem 0;
+    }
+    /* .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    } */
+  }
 </style>
