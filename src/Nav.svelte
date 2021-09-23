@@ -57,8 +57,5 @@
   .nav-link:hover {
     color: #f68b1e;
   }
-  #acct{
-    border: none;
-    outline: none;
-  }
+ 
 </style>
