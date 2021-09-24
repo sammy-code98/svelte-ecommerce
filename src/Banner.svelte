@@ -116,4 +116,13 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     cursor: pointer;
   }
+  @media only screen and (max-width: 768px) {
+    .side-menu{
+      display: none;
+    }
+    .car-img{
+      width: 200px;
+      height: 50px;
+    }
+  }
 </style>

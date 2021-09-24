@@ -4,13 +4,13 @@
   let navMenu = document.querySelector(".nav-menu");
   let navLink = document.querySelectorAll(".nav-link");
 
-  hamburger.addEventListener("click", mobileMenu);
+  // hamburger.addEventListener("click", mobileMenu);
   function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
   }
 
-  navLink.forEach((n) => n.addEventListener("click", closeMenu));
+  // navLink.forEach((n) => n.addEventListener("click", closeMenu));
 
   function closeMenu() {
     hamburger.classList.remove("active");
@@ -94,15 +94,15 @@
       width: 100vw;
     }
     .nav-logo {
-      font-size: 40px;
+      font-size: 30px;
     }
     .nav-menu {
       position: fixed;
       left: -100%;
       top: 5rem;
       flex-direction: column;
+      width: 300px;
       background-color: #fff;
-      width: 100%;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
