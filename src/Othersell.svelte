@@ -161,4 +161,19 @@
   .sell-card:hover {
     transform: scale(0.95);
   }
+  @media only screen and (max-width: 768px) {
+    .items{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+      padding-bottom: 30px;
+
+    }
+    .sell-card{
+      width: 85px;
+      margin: 8px;
+
+      
+    }
+  }
 </style>
