@@ -43,7 +43,6 @@
     <div class="mini-card">Ecommerce Global</div>
     <div class="mini-card">Official Stores</div>
     <div class="mini-card">Ecommerce Food</div>
-
     <div class="mini-card">Loan Money</div>
   </div>
 </main>
@@ -120,9 +119,26 @@
     .side-menu{
       display: none;
     }
+    .carousel{
+      height: 200px;
+    }
     .car-img{
       width: 200px;
-      height: 50px;
+      height: 100%;
+    }
+    .ad-card{
+      margin-left: 20px;
+      width: 100px;
+    }
+    .sub-menu{
+      display: grid;
+      grid-template-columns:repeat(2, 1fr);
+    }
+    .mini-card{
+      width: 100px;
+      height: 30px;
+      text-align: center;
+      padding: 12px;
     }
   }
 </style>
