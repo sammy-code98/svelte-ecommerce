@@ -1,23 +1,3 @@
-<script>
-  import Search from "./Search.svelte";
-  let hamburger = document.querySelector(".hamburger");
-  let navMenu = document.querySelector(".nav-menu");
-  let navLink = document.querySelectorAll(".nav-link");
-
-  // hamburger.addEventListener("click", mobileMenu);
-  function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  }
-
-  // navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-  function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  }
-</script>
-
 <main>
   <nav class="navbar">
     <span class="nav-logo">Ecommerce</span>
@@ -91,7 +71,7 @@
   /* media queries */
   @media only screen and (max-width: 768px) {
     .navbar {
-      width: 100vw;
+      width: 340px;
     }
     .nav-logo {
       font-size: 30px;
@@ -111,7 +91,7 @@
     .nav-item {
       margin: 2.5rem 0;
     }
-    /* .hamburger {
+    .hamburger {
       display: block;
       cursor: pointer;
     }
@@ -125,6 +105,27 @@
 
     .hamburger.active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
-    } */
+    }
   }
 </style>
+
+<script>
+  import Search from "./Search.svelte";
+  let hamburger = document.querySelector(".hamburger");
+  let navMenu = document.querySelector(".nav-menu");
+  let navLink = document.querySelectorAll(".nav-link");
+  console.log(hamburger);
+
+hamburger.addEventListener("click", mobileMenu);
+  function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  }
+
+  navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+  function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+</script>
