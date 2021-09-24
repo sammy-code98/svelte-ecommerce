@@ -1,7 +1,7 @@
 <main>
   <nav class="navbar">
     <span class="nav-logo">Ecommerce</span>
-    <!-- <Search /> -->
+    <Search />
     <ul class="nav-menu">
       <li class="nav-item">
         <a href="#" class="nav-link">Account</a>
@@ -114,9 +114,8 @@
   let hamburger = document.querySelector(".hamburger");
   let navMenu = document.querySelector(".nav-menu");
   let navLink = document.querySelectorAll(".nav-link");
-  console.log(hamburger);
 
-hamburger.addEventListener("click", mobileMenu);
+// hamburger.addEventListener("click", mobileMenu); 
   function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
