@@ -34,4 +34,16 @@
     padding: 12px;
     border-radius: 20px;
   }
+  @media only screen and (max-width: 768px) {
+    .container{
+      display: block;
+      width: 350px;
+    
+    }
+    .img{
+      width: 90%;
+      margin: auto;
+    }
+    
+  }
 </style>
